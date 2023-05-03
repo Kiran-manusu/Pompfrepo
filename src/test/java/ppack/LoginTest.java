@@ -24,6 +24,7 @@ public class LoginTest {
 	{
 		WebDriverManager.chromedriver().setup();
 		
+		System.out.println("Chrome Options are removed.");
 				
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
