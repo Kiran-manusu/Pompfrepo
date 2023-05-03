@@ -24,12 +24,7 @@ public class LoginTest {
 	{
 		WebDriverManager.chromedriver().setup();
 		
-		//ChromeOptions opt= new ChromeOptions();
-		//opt.addArguments("--remote-allow-origins=*");
-		//driver = new ChromeDriver(opt);
-		
-		
-		
+				
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
