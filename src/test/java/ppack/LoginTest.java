@@ -22,12 +22,10 @@ public class LoginTest {
 	@Test
 	public void loginsTest() throws IOException
 	{
-		WebDriverManager.chromedriver().setup();
-		
-		
+		WebDriverManager.chromedriver().setup();		
 		ChromeOptions opt = new ChromeOptions();
-		opt.addArguments("--remote-allow-origins=*");
 		
+		opt.addArguments("--remote-allow-origins=*");		
 				
 		driver = new ChromeDriver(opt);
 		driver.manage().window().maximize();
