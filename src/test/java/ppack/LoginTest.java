@@ -20,7 +20,7 @@ public class LoginTest {
 	WebDriver driver;
 	
 	@Test
-	public void loginsTest() throws IOException
+	public void loginsTest() throws IOException, Exception
 	{
 		WebDriverManager.chromedriver().setup();
 		
@@ -47,6 +47,8 @@ public class LoginTest {
 		accountpage.mouseclick1().click();
 		accountpage.myaccount().click();
 		accountpage.mouseclick2().click();
+		
+		Thread.sleep(2000);
 		accountpage.logout().click();
 		
 	}
